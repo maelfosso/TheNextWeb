@@ -1,1 +1,69 @@
-body {}
+body {
+    width: 100%;
+}
+.head, .first, .sec1, .sec2, .third, .grid1, .grid2, .grid3, .grid4, .grid2-1,.grid2-2,.grid2-3, .footer{
+    border: 1px solid grey;
+    background: grey;
+}
+
+.head{
+    width: 100%;
+    height: 10vh;
+}
+
+.main-cont{
+ margin: 0 20px 0 20px;
+}
+
+.first{
+    width: 70%;
+    height: 70vh;
+}
+
+.second{
+    width: 28%;
+    height: 70vh;
+    float: right;
+}
+
+.sec1, .sec2{
+    margin-bottom: 5px;
+    height: 34.4vh;
+}
+
+.grid, .grid-2{
+    display: inline-block;
+    margin: 5px 20px 0 20px;
+    clear: both;
+    width: 98%;
+}
+
+.grid1, .grid2, .grid3, .grid4{
+    display: inline-block;
+    height: 25vh;
+    width: 24.4%;
+}
+
+.grid2-1, .grid2-2, .grid2-3{
+    display: inline-block;
+    height: 35vh;
+    width: 32.7%
+}
+
+.footer{
+    clear: both;
+    width: 100%;
+    height: 6vh;
+    margin: 5px 0 5px 0;
+}
+
+/* media query- Navbar */ 
+
+@media (max-width: 1023px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
