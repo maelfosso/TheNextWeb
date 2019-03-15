@@ -57,13 +57,20 @@ body {
     margin: 5px 0 5px 0;
 }
 
-/* media query- Navbar */ 
+/* media query- Navbar */
 
 @media (max-width: 1023px) {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
+  .grid-2 {
+    display: block;
+  }
 
+  div[class^="grid2-"] {
+    display: block;
+    width: inherit;
+    margin-bottom: .5em;
+  }
 }
-
