@@ -60,17 +60,26 @@ body {
 /* media query- Navbar */
 
 @media (max-width: 1023px) {
-
+  div.grid4 {
+    display: none;
+  }
+  .grid1, .grid2, .grid3 {
+    width: 32.7%;
+  }
 }
 
 @media (max-width: 740px) {
-  .grid-2 {
+  .grid, .grid-2 {
     display: block;
   }
 
-  div[class^="grid2-"] {
+  div[class^="grid2-"], div[class^="grid"] {
     display: block;
     width: inherit;
     margin-bottom: .5em;
+  }
+
+  div.grid4 {
+    display: none;
   }
 }
