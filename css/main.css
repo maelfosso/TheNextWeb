@@ -1,35 +1,449 @@
 body {
     width: 100%;
-}
-.head, .first, .sec1, .sec2, .third, .grid1, .grid2, .grid3, .grid4, .grid2-1,.grid2-2,.grid2-3, .footer{
-    border: 1px solid grey;
-    background: grey;
+    line-height: 1.5;
 }
 
-.head{
+ul li {
+    float: left;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+/* HEADER STYLES */
+nav {
+    left: 0;
+    right: 0;
+    height: 80px;
+    position: fixed;
+    z-index: 20;
+    box-shadow: 0 0 32px rgba(0, 0, 0, .15);
+  }
+
+  #tnw-logo {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 106px;
+    height: 80px;
+    display: none;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    background-color: #f42;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+  }
+
+  #tnw-logo a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 35px;
+  }
+
+  #nav-tnw {
+    font-size: 13px;
+    max-height: 32px;
+    overflow: hidden;
+    font-weight: 500;
+    line-height: 32px;
+    position: relative;
+    background: #131313;
+  }
+  
+  #nav-tnw li:first-child {
+    margin-left: 20px;
+  }
+  
+  #nav-tnw li {
+    color: #aaa;
+    margin-right: 12px;
+    background: #131313;
+  }
+
+
+  #sections-container {
+    height: 48px;
     width: 100%;
-    height: 10vh;
+    background: #fff;
+    position: relative;
+  }
+  
+  #nav-tnw-sections {
+    line-height: 48px;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  #nav-tnw-sections li a {
+    color: #aaa;
+    margin-left: 20px;
+    font-family: 'Quantico', sans-serif;
+  }
+
+  
+#nav-tnw-follows li a,
+#nav-tnw-icons li a {
+  color: #aaa;
 }
 
-.main-cont{
- margin: 0 20px 0 20px;
+#nav-tnw-icons {
+  float: right;
+  line-height: 48px;
+  border-left: 1px solid #aaa;
 }
 
-.first{
-    width: 70%;
-    height: 70vh;
+#nav-tnw-icons li {
+  float: left;
+  position: relative;
 }
 
-.second{
-    width: 28%;
-    height: 70vh;
-    float: right;
+#nav-tnw-icons li:nth-child(2) {
+  display: none;
 }
 
-.sec1, .sec2{
-    margin-bottom: 5px;
-    height: 34.4vh;
+#nav-tnw-icons li:nth-child(2) i {
+  color: orange;
 }
+
+#nav-tnw-icons li > a {
+  padding: 16px;
+}
+
+#nav-tnw-icons i,
+#nav-tnw-follows i {
+  font-size: 16px;
+}
+
+#nav-tnw-follows {
+  float: right;
+  width: 136px;
+  line-height: 40px;
+  padding: 3px 0 0 8px;
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+}
+
+#nav-tnw-follows li {
+  margin-top: 2px;
+  margin-left: 13px;
+}
+
+.nav-message {
+  left: 0;
+  right: 0;
+  top: 48px;
+  height: 30px;
+  font-size: 13px;
+  background: #fd3;
+  line-height: 30px;
+  position: absolute;
+}
+
+.nav-message a {
+  color: #000;
+  margin-left: 20px;
+}
+
+@media (max-width: 1023px) {
+  #tnw-logo {
+    display: inline-block;
+  }
+
+  #nav-tnw {
+    margin-left: 106px;
+  }
+
+  #nav-tnw-sections {
+    padding-left: 106px;
+  }
+
+}
+
+@media (max-width: 720px) {
+
+  nav, #tnw-logo {
+    height: 48px;
+  }
+
+  #tnw-logo {
+    line-height: 48px;
+  }
+
+  #nav-tnw, #nav-tnw-sections,
+  #nav-tnw-follows {
+    display: none;
+  }
+
+  #nav-tnw-icons li:nth-child(2) {
+    border-left: 1px solid #aaa;
+    display: inline-block;
+  }
+
+  .nav-message {
+    top: 48px;
+  }
+}
+
+nav:after {
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+
+
+
+/* MAIN CONTENT */
+/* section 2-col */
+
+
+#main {
+    top: 104px;
+    z-index: 2;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .grid-3 {
+    height: 75vh;
+    padding: 4px;
+    max-height: 560px;
+    position: relative;
+  }
+  
+  .cover-story {
+    padding: 4px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .grid-3 article:first-child {
+    float: left;
+    height: 100%;
+    width: 66.66666%;
+  }
+  
+  .grid-3 article:nth-child(2),
+  .grid-3 article:last-of-type {
+    float: left;
+    height: 50%;
+    width: 33.33333%;
+  }
+  
+  .cover-image {
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    position: absolute;
+    background-position: 50%;
+  }
+  
+  #cover-time {
+    top: 16px;
+    color: #fff;
+    z-index: 6;
+    right: 24px;
+    position: absolute;
+  }
+  
+  .cover-logo {
+    top: 24px;
+    left: 24px;
+    z-index: 6;
+    right: 24px;
+    height: 100%;
+    max-width: 50%;
+    max-height: 112px;
+    text-align: right;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
+  }
+  
+  .grid-3 article:nth-child(1n+1) .cover-image {
+    z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .grid-3 article:first-child .cover-image {
+    background-image: linear-gradient(to bottom right, rgba(255, 68, 34, 1), rgba(0,0,0, 0.70), rgba(0,0,0, 10)),
+          url("/img/pix1.jpg");
+  }
+  
+   .grid-3 article:nth-child(2) .cover-image {
+     background-image: linear-gradient(to bottom ,rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7), rgba(0,0,0, 10)),
+                       url("/img/pix2.jpg");
+  }
+  
+  .grid-3 article:nth-child(3) .cover-image {
+    background-image: linear-gradient(to bottom ,rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7), rgba(0,0,0, 10)),
+                      url("/img/pix3.jpg");
+  }
+  .cover-header h5 {
+    font-size: 14px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+ 
+ .grid-3 article:first-child h5 {
+   margin-left: 5px;
+ }
+ 
+ .grid-3 article:first-child h2 {
+   font-size: 42px;
+   line-height: 1;
+   padding-bottom: 10px;
+ }
+ 
+ /**************************************************
+  *              Others article styles             *
+  **************************************************/
+ .grid-3 article a {
+   text-decoration: none;
+ }
+ 
+ .cover-section, .cover-title {
+   color: #fff;
+ }
+ 
+ .cover-header {
+   left: 4px;
+   right: 4px;
+   bottom: 4px;
+   z-index: 5;
+   padding: 14px 12px;
+   position: absolute;
+ }
+ 
+ .cover-section {
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: .04em;
+   font-family: 'Quantico', sans-serif;
+ }
+ 
+ .cover-title {
+   font-size: 24px;
+   font-weight: 800;
+   line-height: 1.2;
+   font-family: 'Avalon', sans-serif;
+ }
+ 
+ .cover-header-bottom {
+   margin-top: 5px;
+   z-index: 12px;
+   cursor: default;
+   position: relative;
+ }
+ 
+ .cover-header-bottom li {
+   float: left;
+   margin-right: 8px;
+   cursor: default;
+   padding-bottom: 5px;
+ }
+ 
+ .grid-3 article:first-child .cover-header-bottom li {
+   padding-bottom: 10px;
+ }
+ 
+ .cover-header-bottom li,
+ .cover-header-bottom li a {
+   color: #ccc;
+   font-size: 12px;
+   margin-left: 1px;
+ }
+ 
+ .cover-header-bottom li a:hover {
+   cursor: pointer;
+   color: #fff;
+ }
+ 
+ @media only screen and (max-width: 1351px) {
+   .grid-3 {
+     height: 65vh;
+     padding: 4px;
+   }
+ }
+ 
+ @media only screen and (max-width: 1024px) {
+ 
+   .grid-3 {
+     padding: 4px;
+     height: 60vh;
+     max-height: 350px;
+     padding: 6px 12px;
+   }
+ 
+   .grid-3 article:first-child h2 {
+     font-size: 38px;
+     padding-bottom: 5px;
+   }
+ 
+   .grid-3 article:nth-child(1n+2) h2 {
+     font-size: 20px;
+   }
+ 
+   .grid-3 article:first-child .cover-header-bottom li {
+     padding-bottom: 5px;
+   }
+ 
+ }
+ 
+ @media (max-width: 1023px) and (min-width: 768px) {
+   .cover-logo, #cover-time {
+     display: none;
+   }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+ 
+   .grid-3 article:nth-child(1n+1) h2 {
+     font-size: 20px;
+   }
+ 
+   .cover-logo, #cover-time {
+     display: none;
+   }
+ 
+   .nav-message { display: none; }
+ 
+   #main { top: 45px; }
+ 
+ 
+   .grid-3 article:nth-child(1n+1) {
+     width: 100%;
+     height: 30vh;
+     min-height: 18vh;
+     position: relative;
+   }
+ 
+   .cover-image {
+     background-position-y: 3%;
+   }
+ 
+   .grid-3 article:first-child .cover-image {
+     background-position-y: 79%;
+   }
+ 
+ }
+ 
+ @media only screen and (max-width: 500px) {
+   .grid-3 article:nth-child(1n+1) h2 {
+     font-size: 18px;
+   }
+ }
+
+
+  /* MAIN CONTENT SECTION 4-col */
 
 .grid, .grid-2{
     display: inline-block;
@@ -63,7 +477,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
 
 }
 
