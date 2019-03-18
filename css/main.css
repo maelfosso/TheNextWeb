@@ -194,17 +194,15 @@ nav:after {
   clear: both;
 }
 
-
-
 /* MAIN CONTENT */
 /* section 2-col */
-
 
 #main {
     top: 104px;
     z-index: 2;
     position: relative;
     box-sizing: border-box;
+    clear: both;
   }
 
   .grid-3 {
@@ -442,12 +440,19 @@ nav:after {
    }
  }
 
+ section:after {
+  content: "";
+  display: inline-block;
+  clear: both;
+}
 
 /* MAIN CONTENT SECTION 4-col */
 .grid {
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  clear:both;
 }
 
 .grid-2{
