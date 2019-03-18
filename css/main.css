@@ -495,13 +495,6 @@ nav:after {
     width: 25%;
 }
 
-/* .grid2-1, .grid2-2, .grid2-3{ */
-.grid2-1, .grid2-2, .grid2-3 {
-    display: inline-block;
-    height: 35vh;
-    width: 32.7%
-}
-
 .footer{
     clear: both;
     width: 100%;
@@ -542,5 +535,158 @@ nav:after {
   .grid figure .grid-image {
     width: 75px;
     height: 75px;
+  }
+}
+
+.grid-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid2-sub {
+  display: block;
+  width: 33.33%;
+  padding: 12px;
+}
+
+.grid2-sub h2 {
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.grid2-sub h2 i {
+  vertical-align: text-bottom;
+}
+
+.grid2-sub .main-img {
+  position: relative;
+}
+
+.grid2-sub .main-img img {
+  width: 100%;
+}
+
+.grid2-sub .main-img span {
+  background: transparent url(../img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.grid2-sub .main-img figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  padding: 14px;
+}
+
+.grid2-sub .main-img figcaption div:nth-child(1) {
+  font-family: Shentox,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.grid2-sub .main-img figcaption h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.grid2-sub .main-img figcaption h3 a {
+  color: #fff;
+}
+
+.grid2-sub .main-img figcaption div:last-child {
+  color: hsla(0,0%,100%,.6);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.grid2-sub .sub-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255,68,34,.06);
+}
+
+.grid2-sub .sub-img figcaption {
+  padding: 10px 14px 0;
+}
+
+.grid2-sub .sub-img img {
+  width: 96px;
+  height: 96px;
+}
+
+.grid2-sub .sub-img figcaption div:first-child {
+  color: #f42;
+  font-size: 13px;
+  font-family: Shentox,sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+
+.grid2-sub .sub-img figcaption div:last-child {
+  font-weight: bold;
+}
+
+.grid2-sub .sub-img figcaption a {
+  color: #f42;
+}
+
+.grid2-sub ul {
+  padding-left: 18px;
+  width: 100%;
+}
+
+.grid2-sub ul li {
+  border-bottom: 1px solid #eee;
+  list-style: circle;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.grid2-sub ul li a {
+  color: #555;
+  display: block;
+  padding: 6px 0 6px 14px;
+  position: relative;
+}
+
+@media (max-width: 1023px) {
+  .grid-2 {
+    flex-wrap: wrap;
+  }
+
+  .grid2-sub {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    width: 100%;
+  }
+
+  .grid2-sub {
+    width: 100%;
   }
 }
