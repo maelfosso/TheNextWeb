@@ -414,7 +414,10 @@ nav:after {
 
    .nav-message { display: none; }
 
-   #main { top: 45px; }
+   #main {
+     top: 45px;
+     position: inherit;
+    }
 
 
    .grid-3 article:nth-child(1n+1) {
