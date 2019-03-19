@@ -704,6 +704,7 @@ nav:after {
 .footer ul.sn, .footer ul.links {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   margin-bottom: 1em;
