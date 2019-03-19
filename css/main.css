@@ -50,6 +50,7 @@ nav {
     line-height: 32px;
     position: relative;
     background: #131313;
+    margin-bottom: 0;
   }
 
   #nav-tnw li:first-child {
