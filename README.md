@@ -11,4 +11,4 @@ This have been done by
 * Mael FOSSO https://github.com/maelfosso
 
 # The Website
-Follow the link to access to the website https://rawcdn.githack.com/maelfosso/TheNextWeb/ef86bd76831698909da18efcfa91c2539db5f003/index.html
+Follow the link to access to the website https://rawcdn.githack.com/maelfosso/TheNextWeb/237dac420b0cd2d3739853e8f102c9912a9bdb18/index.html
