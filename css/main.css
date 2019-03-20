@@ -27,7 +27,7 @@ nav {
     left: 0;
     z-index: 1;
     width: 106px;
-    height: 90px;
+    height: 80px;
     display: none;
     line-height: 80px;
     text-align: center;
@@ -50,6 +50,7 @@ nav {
     line-height: 32px;
     position: relative;
     background: #131313;
+    margin-bottom: 0;
   }
 
   #nav-tnw li:first-child {
@@ -198,19 +199,27 @@ nav:after {
 /* section 2-col */
 
 #main {
-    top: 70px;
+    /* top: 104px; */
     z-index: 2;
-    position: relative;
+    /* position: relative; */
+    padding-top: 104px;
     box-sizing: border-box;
     clear: both;
   }
 
+/* #main::after {
+  clear: both;
+} */
   .grid-3 {
     height: 75vh;
     padding: 4px;
     max-height: 560px;
     position: relative;
   }
+
+  /* .grid-3::after, .grid-3::before {
+    clear: both;
+  } */
 
   .cover-story {
     padding: 4px;
@@ -412,15 +421,13 @@ nav:after {
      display: none;
    }
 
-   .grid1-sub:first-of-type{
-    margin-top: 80px;
-   }
    /* .nav-message { display: none; } */
 
-   /* #main {
-     top:70px;
+   #main {
+     top: 45px;
      position: inherit;
-    } */
+    }
+
 
    .grid-3 article:nth-child(1n+1) {
      width: 100%;
@@ -453,18 +460,13 @@ nav:after {
 
 /* MAIN CONTENT SECTION 4-col */
 .grid {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   clear:both;
-}
-
-.grid-2{
-    display: inline-block;
-    margin: 5px 20px 0 20px;
-    clear: both;
-    width: 98%;
+  width: 87%;
+  margin: auto;
 }
 
 .grid figure {
@@ -551,6 +553,8 @@ nav:after {
 .grid-2 {
   display: flex;
   flex-direction: row;
+  width: 87%;
+  margin: auto;
 }
 
 .grid2-sub {
@@ -755,4 +759,8 @@ nav:after {
   font-size: 13px;
   padding: 2.5em 0;
   text-align: center;
+}
+
+#main:before {
+  clear: both;
 }
