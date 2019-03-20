@@ -27,7 +27,7 @@ nav {
     left: 0;
     z-index: 1;
     width: 106px;
-    height: 80px;
+    height: 90px;
     display: none;
     line-height: 80px;
     text-align: center;
@@ -198,7 +198,7 @@ nav:after {
 /* section 2-col */
 
 #main {
-    top: 104px;
+    top: 70px;
     z-index: 2;
     position: relative;
     box-sizing: border-box;
@@ -412,13 +412,15 @@ nav:after {
      display: none;
    }
 
-   .nav-message { display: none; }
+   .grid1-sub:first-of-type{
+    margin-top: 80px;
+   }
+   /* .nav-message { display: none; } */
 
-   #main {
-     top: 45px;
+   /* #main {
+     top:70px;
      position: inherit;
-    }
-
+    } */
 
    .grid-3 article:nth-child(1n+1) {
      width: 100%;
